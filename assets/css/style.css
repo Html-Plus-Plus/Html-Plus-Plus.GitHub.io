@@ -1,0 +1,1059 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ffff00;
+    position: relative;
+}
+
+body:after {
+    position: absolute;
+    content: "";
+    
+}
+
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #000;
+    transition: all .3s;
+    font-size: 13px;
+}
+
+p {
+  font-size: 13px;  
+}
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Make circles that indicate the steps of the form: */
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+header .container-fluid .row {
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #000;
+    overflow: visible;
+    transition: opacity .3s .2s;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/* dropdown area for body popup */
+#dropdownMenuButton, ##dropdownMenuButton4 {
+    background-color: transparent;
+    width: 40px;
+}
+
+#dropdownMenuButton .bolt-icon {
+    border-radius: 100%;
+    font-size: 25px;
+    padding: 3px;
+    color: #fff;
+    background-color: #000;
+}
+
+.dropdown-menu {
+    width: 145px;
+    padding: 0;
+    margin-top: -5px;
+    top: 100%;
+    width: 185px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    background: #fff;
+}
+
+.dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #000;
+    padding: 2px inherit;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* news-ticker area for raning news */
+.news-ticker {
+    width: 250px;
+    height: 35px;
+    background-color: #000;
+    color: #fff;
+    transition: left .5s linear;
+}
+
+.ticker {
+    margin: 0 10px;
+}
+
+.ticker span {
+    padding: 0 10px;
+}
+
+/* note area and include contact-form */
+#dropdownMenuButton2, #dropdownMenuButton {
+    background-color: transparent;
+    color: #000;
+}
+
+#dropdownMenuButton2.dropdown-toggle::after {
+    display: block;
+}
+
+#dropdownmenu {
+    width: 460px;
+    -ms-transform: translateX(-30%);
+    transform: translateX(-30%);
+}
+
+#dropdownmenu  .Circular{
+    padding: 20px 0 0 20px;
+}
+
+#main-from p{
+    padding-top:  10px;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 0 auto;
+    font-family: Raleway;
+    padding: 0;
+    width: 70%;
+    min-width: 300px;
+}
+
+.dropdown-contant{
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.dropdown-contant-list {
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.dropdown-contant-list li {
+    padding: 7px 0;
+    font-size: 13px;
+}
+
+.dropdown-contant-list li:last-child {
+    padding: 10px 0 0 0;
+    font-size: 13px;
+}
+
+.dnextButton, #nextBtn:active.dnextButton, #nextBtn:focus.dnextButton {
+    background-color: transparent;
+}
+
+.addnextButton {
+    background-color: #5d5d5d;
+    color: #fff;
+}
+
+#main-from {
+    position: relative;
+}
+
+#main-from input {
+    padding: 7px 0;
+}
+
+
+.from-overlay {
+    position: absolute;
+    width: 100%;
+    height: 54px;
+    left: 0;
+    bottom: -188px;
+    text-align: center;
+    
+}
+
+.from-overlay img {
+    width: auto;
+    height: 54px;
+}
+
+/* contact-area */
+.contact-area {
+    
+}
+
+.contact-area .form-control {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0px;
+    margin-right: -15px;
+}
+
+.contact-area .dropdown button {
+    background: transparent;
+    color: #000;
+    padding-right: 22px;
+}
+
+.contact-area .dropdown button .asymmetrik-icon{
+    font-size: 25px;
+}
+
+.contact-area .dropdown-menu li {
+    padding: 0;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.contact-area .dropdown-menu li a {
+    display: block;
+    padding: .4em .92rem;
+}
+
+.contact-area .dropdown-menu li a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.difult-color:hover {
+    color: #000  !important;
+    background: transparent !important;
+    border-bottom: 1px solid #000;
+}
+
+.frist-e-mail {
+    box-shadow: 2px 2px 0 #000;
+}
+
+.frist-e-mail button {
+    padding: 9px inherit;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* main-contact-area */
+.all-content {
+    height: 100vh;
+    background: url(../../assets/images/headoffice.png) no-repeat center center;
+}
+
+.contant-list {
+    margin: 80px 0 0 40px;
+}
+
+.contant-single {
+    width: 85px;
+    margin-bottom: 45px;
+}
+
+.contant-single .i-size-b {
+    color: #000;
+    font-size: 60px;
+}
+
+.contant-single:last-child{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    margin-bottom: 0px;
+    z-index: 99999999;
+}
+
+.contant-single span {
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    width: 87px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.contant-single-img img {
+    width: auto;
+}
+
+#office-dropdown-toggle {
+    width: 360px;
+    height: 40px;
+    margin-top: 80px;
+    margin-right: 40px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    background: #ffff80;
+}
+
+.contact-padding-left {
+    padding-left: 15px;
+}
+
+#office-dropdown-toggle a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dropdown-office {
+    position: relative;
+    height: 48px;
+}
+
+.office-dropdown-icon {
+    margin: 10px 15px 0 0;
+    height: 25px;
+    width: 25px;
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+}
+
+.office-dropdown-icon:hover {
+    margin-top: 12px;
+    box-shadow: 0px 0px 0 transparent;
+}
+
+.office-dropdown-icon .new-caret {
+    transition: .5s;
+}
+
+.office-dropdown-icon.active .new-caret {
+    transform: rotate(180deg);
+}
+
+.office-dropdown-menu {
+    position: absolute;
+    width: 360px;
+    height: 285px;
+    right: -1px;
+    top: 43px;
+    background: #FFFF81;
+    border: 1px solid #000;
+    border-top: 0;
+    box-shadow: 2px 2px 0 #000;
+    display: none;
+}
+
+.office-dropdown-menu.office-dropdown-show {
+    display: block;
+} 
+
+
+.address {
+    padding: 20px 0 0 20px;
+}
+
+.local-address td, .p-mail td {
+    padding-bottom: 15px;
+}
+
+.map {
+    padding: 0px !important;
+    border-bottom: 1px solid #000;
+}
+
+.tel-phone td  {
+    padding-top: 15px !important;
+}
+
+
+/* Responsive Add Class */
+.popupmenu {
+    z-index: 9999;
+}
+
+#Social-show.headen {
+    left: -100%;
+}
+
+.responsiveicon {
+    position: absolute;
+    left: -999px;
+    top: 0;
+}
+
+
+/* popup css  for About This */
+#popup_bg, #popup_color_perer, #popup_body, #sub-popup_body-1, #sub-popup_body-2, #popup_body-service, #popup_body-service-sub-1, #popup_body-service-sub-2, #popup_body-client, #popup_body-client-sub-1, #popup_body-client-sub-2, #popup_body-client-sub-3, #popup_body-client-sub-4, #popup_body-client-sub-5, #popup_body-shouts {
+    position: fixed;
+    left: 0;
+    top: 35px;
+    display: none;
+    z-index: 99;
+}
+
+.popup-main-body, .popup-main-body-2, .popup-main-body-icon, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup, .service-popup-sub-1, .service-popup-sub-2, .client-popup, .client-popup-sub-1, .client-popup-sub-2, .client-popup-sub-3, .client-popup-sub-4, .client-popup-sub-5, .shouts-popup {
+    position: fixed;
+    background: #fff;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border: 1px solid #000;
+}
+
+.popup-main-body, .popup-main-body-2, .popup-main-body-icon, .service-popup, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup-sub-1, .service-popup-sub-2, .client-popup, .client-popup-sub-1, .client-popup-sub-2, .client-popup-sub-3, .client-popup-sub-4, .client-popup-sub-5, .shouts-popup {
+    width: 43%;
+    height: 450px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+}
+
+.contant-scroll.full, .color-list.full, .body-contant-scroll.full, .popup-main-body.full, .popup-main-body-2.full, .popup-main-body-icon.full, .service-popup.full, .service-popup-sub-1.full, .service-popup-sub-2.full, .sub-popup-main-body-icon-1.subfull, .sub-popup-main-body-icon-2.subfull-2, .client-popup.full, .client-popup-sub-1.full, .client-popup-sub-2.full, .client-popup-sub-3.full , .client-popup-sub-4.full, .client-popup-sub-5.full, .shouts-popup.full {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contant-scroll, .color-list, .body-contant-scroll {
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.body-contant-scroll {
+    position: relative;
+}
+
+.body-contant-scroll:after, .body-contant-scroll:before {
+    position: fixed;
+    content: "";
+    width: 12%;
+    height: 100%;
+    background: url(../../assets/images/red-img.png);
+    background-repeat: repeat;
+    z-index: 99;
+}
+
+.body-contant-scroll:after {
+    left: 0;
+    top: 0;
+}
+
+.body-contant-scroll:before {
+    right: 15px;
+    top: 0;
+}
+
+.popup-icon-contant {
+    width: 65%;
+    margin: 83px auto 0px auto;
+    padding: 0 15px;
+}
+
+.popup-icon-contant h3 {
+    font-size: 32px;
+}
+
+.popup-icon-contant h5 {
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.popup-icon-contant p {
+    font-size: 17px;
+}
+
+.full-popup-div, .full-popup-div-2, .sub-full-popup-div, .sub-full-popup-div-2, .service-full-popup-div, .service-full-popup-div-sub-1, .service-full-popup-div-sub-2, .client-full-popup-div, .full-popup-client-sub-1, .full-popup-client-sub-2, .full-popup-client-sub-3, .full-popup-client-sub-4, .full-popup-client-sub-5, .shouts-full-popup-div  {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    right: 50px;
+    top: 15px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+    z-index: 9999;
+}
+
+.popup-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 99999;
+}
+
+.popup-icon span {
+    width: 35px;
+    height: 35px;
+    background: #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.popup-icon span .bolt-popup-icon {
+    color: #fff;
+}
+
+.full-popup-div:hover {
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow: 0px 0px 0 transparent;
+}
+
+.full-popup-div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compress-icon {
+    font-size: 20px;
+}
+
+.close-popup-div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    right: 15px;
+    top: 15px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+    z-index: 9999;
+}
+
+.close-popup-div:hover {
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow: 0px 0px 0 transparent;
+}
+
+.close-popup-div p {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+}
+
+.section-top {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: url(../../assets/images/popup-bg.png) repeat;
+    z-index: 999;
+    border: 1px solid #000;
+}
+
+.section-top h6 {
+    width: 340px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.popup-main-contant, .popup-footer {
+    padding: 0 15px;
+}
+
+.popup-main-contant {
+    margin-top: 60px;
+}
+
+.popup-footer {
+    padding-bottom: 30px;
+}
+
+.popup-main-contant img {
+    margin: 35px 0 28px 0;
+}
+
+.popup-main-contant h3 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.popup-main-contant p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text-small {
+    font-size: .9rem;
+}
+
+.email-us {
+    background: yellow;
+    text-transform: lowercase !important;
+}
+
+/* popup css  for Color Piker */
+.save-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0 75px 0;
+    margin-top: 60px;
+}
+
+.single-color {
+    width: 140px;
+    height: 80px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.save-popup-div, .close-color-div, .Colour-selected {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.Colour-selected {
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.Colour-selected .selected{
+    text-transform: uppercase;
+}
+
+.save-popup-div p, .close-color-div p {
+    margin-top: 10px;  
+}
+
+.color-name-1 {
+    background: red;
+}
+.color-name-2 {
+    background-color: green;
+}
+.color-name-3 {
+    background-color: antiquewhite;
+}
+.color-name-4 {
+    background-color: aqua;
+}
+.color-name-5 {
+   background-color: crimson;
+}
+.color-name-6 {
+    background-color: grey;
+}
+.color-name-7 {
+    background-color: chartreuse;
+}
+.color-name-8 {
+    background-color: chocolate;
+}
+.color-name-9 {
+    background-color: silver;
+}
+.color-name-10 {
+    background-color: violet;
+}
+.color-name-11 {
+    background-color: lime;
+}
+.color-name-12 {
+    background-color: mediumblue;
+}
+
+body.c-red {
+    background: red;
+}
+body.c-green {
+    background-color: green;
+}
+body.c-antiquewhite {
+    background-color: antiquewhite;
+}
+body.c-aqua {
+    background-color: aqua;
+}
+body.c-crimson {
+   background-color: crimson;
+}
+body.c-grey {
+    background-color: grey;
+}
+body.c-chartreuse {
+    background-color: chartreuse;
+}
+body.c-chocolate {
+    background-color: chocolate;
+}
+body.c-silver {
+    background-color: silver;
+}
+body.c-violet {
+    background-color: violet;
+}
+body.c-lime {
+    background-color: lime;
+}
+body.c-mediumblue {
+    background-color: mediumblue;
+}
+
+body.d {
+    background-color: #ffff00;
+}
+
+.color-se {
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+/* For services  */
+.services-img {
+    max-width: 95px;
+    margin: 0px 10px 30px 10px;
+}
+
+.services-img span{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.services-img img {
+    width: auto;
+}
+
+ul.plain {
+    margin-left: 25px;
+}
+
+/* Preloader */
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    margin: 10% auto;
+    border-top: 6px solid #1abc9c;
+    width: 125px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 99999;
+}
+
+.spin {
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -ms-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes "spin" {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes "spin" {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes "spin" {
+    from {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        transform: rotate(3670deg);
+    }
+}
+
+@-o-keyframes "spin" {
+    from {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.class {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.up {
+    background-color: #34495e;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+
+.down {
+    background-color: #34495e;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+}
+
+.left-text-con,
+.right-text-con {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 35%;
+}
+
+.left-text-con {
+    left: -50%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.right-text-con {
+    right: -50%;
+}
+
+.text {
+    color: #34495e;
+    font-size: 4em;
+    margin: 0 auto;
+}
+
+@media (max-height: 300px) {
+    .text {
+        font-size: 3em;
+    }
+    .left-text-con,
+    .right-text-con {
+        top: 20%;
+    }
+}
+
+.anchor-user {
+    font-size: 3em;
+    position: relative;
+    bottom: 0;
+    right: 20px;
+    color: #000;
+}
+
+.anchor-user:hover {
+    color: #039be5;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+/* sleep */
+#sleep {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#sleep.start {
+    display: block;
+}
+
+
+/* Body Icon Section css */
+.hgf {
+    text-transform: capitalize;
+    background: #ff0;
+}
+
+.hgf-img {
+    margin:0 0 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

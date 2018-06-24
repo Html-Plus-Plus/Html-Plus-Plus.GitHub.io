@@ -1,0 +1,183 @@
+
+@media screen and (max-width : 1400px) {
+    
+    .popup-main-body-icon, .service-popup, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup-sub-1, .service-popup-sub-2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    
+    .popup-main-body-icon, .service-popup, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup-sub-1, .service-popup-sub-2 {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    
+    .popup-main-body-icon, .service-popup, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup-sub-1, .service-popup-sub-2 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    .responsiveicon {
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navicon{
+        border-radius: 100%;
+        font-size: 25px;
+        padding: 3px;
+        color: #fff;
+        background-color: #000;
+    }
+    
+    .contant-single:last-child {
+        position: inherit;
+        right: inherit;
+        bottom: inherit;
+        margin-bottom: inherit;
+        z-index: 0;
+    }
+    
+    .contant-single  {
+        margin: 0 20px;
+    }
+    
+    .contant-single:last-child, .dropdown-office.z-index {
+        z-index: -99;
+    }
+    
+    .dropdown {
+        position: inherit;
+    }
+    
+    .dropdown-contant , .asymmetrik-icon, .responsivenone, .bolt-icon, #dropdownMenuButton2.dropdown-toggle::after {
+        display: none;
+    }
+    
+    .popupmenu {
+        display: block !important;
+        z-index: 999;
+    }
+    
+    #dropdownmenu {
+        transform: translateX(0px);
+    }
+    
+    #Social-show, #dropdownmenu, #popupmenu.popupmenu, #res-ticker {
+        display: block !important;
+        position: absolute;
+        width: 90%;
+        left: -100%;
+        transition: left .5s linear;
+    }
+    
+    #Social-show.show, #dropdownmenu.show, #popupmenu.popupmenu.show, #res-ticker.show {
+        left: -5px;
+        transition: left .5s linear;
+    }
+    
+    #popupmenu.popupmenu {
+        top: 39px;
+    }
+    
+    #Social-show {
+        top: 300px;
+    }
+    
+    #dropdownmenu{
+        top: 150px;
+    }
+    
+    #res-ticker {
+        top: 420px;
+    }
+    
+    .news-ticker {
+        width: 90%;
+    }
+    
+    #Social-show li {
+        border-bottom: 1px solid #000;
+    }
+    
+    #dropdownmenu {
+        display: block;
+        left: -100%;
+    }
+    
+    #address-dropdown-menu {
+        top: 0;
+    }
+    
+}
+
+@media screen and (max-width : 710px) {
+    
+   .popup-main-body {
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width : 650px) {
+    
+    .contant-single  {
+        margin: 0 10px;
+    }
+    
+    .popup-main-body-icon, .service-popup, .sub-popup-main-body-icon-1, .sub-popup-main-body-icon-2, .service-popup-sub-1, .service-popup-sub-2 {
+        width: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width : 580px) {
+    
+    #contant-listId {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .contant-single  {
+        margin: 10px;
+    }
+    
+    #all-contentId {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width : 400px) {
+    
+    #office-dropdown-toggle, .office-dropdown-menu {
+        width: 300px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width : 769px) {
+    
+    .contant-single:last-child {
+        z-index: 0;
+    }
+}
+

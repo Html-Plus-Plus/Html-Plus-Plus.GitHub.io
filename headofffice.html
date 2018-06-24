@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!--page title-->
+    <title>Head office</title>
+
+    <!--fontawesome-all.min.css v-5.0.9-->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    
+    <!--For mouse drag and drop-->
+    <link rel="stylesheet" href="assets/css/draganddrop.css">
+
+    <!--bootstrap.min.css v-3.3.7-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+    <!--main css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+</head>
+
+    <body>
+        <!-- START PAGELOADER SECTION-->
+        <div class="wrapper">
+           <div class="up"></div>
+           <div class="loading"></div>
+           <div class="down"></div>
+        </div>
+        <!-- END PAGELOADER SECTION -->
+        
+        <div id="sleep"></div>
+
+        <!-- START HEADER SECTION -->
+        <header id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="header-col d-flex flex-row align-items-center">
+                        <div class="responsiveicon">
+                            <i class="fas fa-bolt navicon"></i>
+                        </div>
+                        <div class="responsive-level">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bolt bolt-icon"></i>
+                                </button>
+                                <div class="dropdown-menu popupmenu" aria-labelledby="dropdownMenuButton" id="popupmenu">
+                                    <a class="dropdown-item" href="#" onclick="OpenPopupMenu()">About this</a>
+                                    <a class="dropdown-item" href="#" onclick="OpenColorMenu()">Preferences</a>
+                                    <a onClick="document.location.reload(true)" class="dropdown-item" href="#">Restart</a>
+                                    <a class="dropdown-item sleep-start" href="#" onclick="bodysleep()">Sleep</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-ticker" id="res-ticker">
+                            <div class="ticker d-flex align-items-center" >
+                                <span>Benvenuti in Matēria.            Siamo una giovane start-up, ci occupiamo di comunicazione ma non solo. Benvenuti in Matēria.            Siamo una giovane start-up, ci occupiamo di comunicazione ma non solo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-col">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="responsivenone">Matēria V0.9 – BETA NOTES</span>
+                              </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="dropdownmenu">
+                                <div class="dropdown-contant">
+                                    <p>20/06/2018 - What’s new in Offfal &trade; V0.9?</p>
+                                    <p>Sin dall'inizio abbiamo voluto dare un'immagine diversa del nostro marchio. Il nostro sito web ne è un esempio. Il layout in stile desktop, tipico di qualsiasi sistema operativo, è ancora più facile ed intuitivo da esplorare rispetto a qualsiasi altro layout in commercio. Del resto la nostra parola chiave è INNOVAZIONE. Perchè dunque un sito web così particolare, unico quasi nel suo genere?</p>
+                                    <ul class="dropdown-contant-list">
+                                        <li>Il computer lo usano tutti, c'è una certa familiarità.</li>
+                                        <li>Il cervello ricorda meglio ciò che ha fatto più fatica a cercare. Questo non è un sito tradizionale, in bocca al lupo!</li>
+                                        <li>Non hai mai visto una cosa simile. Se avrai bisogno di siti web in futuro saprai chi chiamare ;-)</li>
+                                        <li>Rispecchia la nostra identità creativa, innovativa e "in simbiosi" con il mondo della tecnologia.</li>
+                                    </ul>
+                                </div>
+                                <!-- Begin MailChimp Signup Form -->
+                                <div id="Circular">
+                                    <p class="Circular">Ricevi le nostre offerte via mail. Non inviamo spam ma solo opportunità da prendere al volo.</p>
+                                    <form id="regForm" action="/action_page.php">
+                                        <!-- One "tab" for each step in the form: -->
+                                        <div class="input-list">
+                                            <div class="tab">
+                                                <p class="frist-e-mail d-flex align-items-center">
+                                                    <input placeholder="Enter your email and clickedy click" oninput="this.className = ''" name="fname">
+                                                    <button type="button" id="nextBtn" onclick="nextPrev(1)" aria-labelledby="dropdownMenuButton2"> <i class="fas fa-caret-right"></i></button>
+                                                </p>
+                                            </div>
+                                            <div class="tab" id="main-from">Main List
+                                                <p>
+                                                    <label for="email"><b>Again Email</b></label>
+                                                    <input placeholder="" oninput="this.className = ''" name="email">
+                                                </p>
+                                                <p>
+                                                    <label for="name"><b>First Name</b></label>
+                                                    <input placeholder="" oninput="this.className = ''" name="phone">
+                                                </p>
+                                                <p>
+                                                    <label for="name"><b>Last Name</b></label>
+                                                    <input placeholder="" oninput="this.className = ''" name="phone">
+                                                </p>
+                                                <p>
+                                                    <label for="name"><b>Company</b></label>
+                                                    <input placeholder="" oninput="this.className = ''" name="phone">
+                                                </p>
+                                                <div class="from-overlay">
+                                                    <img src="assets/images/MC_MonkeyReward_15.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="overflow:auto;">
+                                            <div style="float:right;">
+                                                <button type="button" id="prevBtn" onclick="nextPrev(-1)" style="display: none;">Previous</button>
+                                                <button type="button" id="nextButton" class="dnextButton" onclick="nextPrev(1)" aria-labelledby="dropdownMenuButton2"></button>
+                                            </div>
+                                        </div>
+                                        <!-- Circles which indicates the steps of the form: -->
+                                        <div style="text-align:center;margin-top:40px;">
+                                            <span class="step"></span>
+                                            <span class="step"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-col">
+                        <div class="contact-area ml-auto d-flex align-items-center">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fab fa-asymmetrik asymmetrik-icon"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3" id="Social-show">
+                                    <li class="disabled"><a>Social</a></li>
+                                    <li><a href="https://twitter.com/#" target="_blank">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/#" target="_blank">Instagram</a></li>
+                                    <li><a href="https://www.facebook.com/#" target="_blank">The other one</a></li>
+                                </ul>
+                            </div>
+                            <input id="my_dtp" class="my_dtp_c form-control" size="16" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER SECTION -->
+
+        <!-- START MAIN CONTANT SECTION -->
+        <div class="all-content d-flex flex-sm-column flex-md-row justify-content-sm-stretch justify-content-md-between     align-items-sm-center align-items-md-stretch" id="all-contentId">
+            <div class="contant-list d-flex flex-sm-row align-items-sm-end flex-md-column " id="contant-listId">
+               
+                <div class="contant-single d-flex  flex-column align-items-center drag" ondblclick="OpenPopupBodyIcon()">
+                    <div class="contant-single-img">
+                        <img src="assets/images/unknow.png" alt="icon">
+                    </div>
+                    <span>README.TXT</span>
+                </div>
+                <div class="contant-single d-flex flex-column align-items-center drag" ondblclick="OpenServicePopupDiv()">
+                    <div class="contant-single-img">
+                        <img src="assets/images/jobs.png" alt="icon">
+                    </div>
+                    <span>Services</span>
+                </div>
+                <div class="contant-single d-flex flex-column align-items-center drag">
+                    <div class="contant-single-img" ondblclick="OpenClientPopup()">
+                        <img src="assets/images/text.png" alt="icon">
+                    </div>
+                    <span>Clients</span>
+                </div>
+                <div class="contant-single d-flex flex-column align-items-center drag">
+                    <div class="contant-single-img" ondblclick="OpenPopupShouts()">
+                        <img src="assets/images/contact.png" alt="icon">
+                    </div>
+                    <span>Shouts</span>
+                </div>
+                <div class="contant-single d-flex flex-column  align-items-center align-self-sm-stretch align-self-md-end drag">
+                    <div class="contant-single-img">
+                        <img src="assets/images/trash.png" alt="icon">
+                    </div>
+                    <span>trash</span>
+                </div>
+                
+            </div>
+            <div class="office-address drag">
+                <div id="office-dropdown-toggle" class="d-flex justify-content-between align-items-center">
+                    <a class="contact-padding-left" href="#">Contact</a>
+                    <div class="dropdown-office">
+                        <div class="office-dropdown-icon">
+                            <i class="fas fa-caret-down new-caret"></i>
+                        </div>
+                        <div class="office-dropdown-menu">
+                            <div class=" address">
+                                <table>
+                                    <p> Wow! Abbiamo catturato la tua attenzione in soli &lowast;&lowast; minuti! La tua fiducia per noi è importante. Non ti deluderemo. </p>
+                                    <tr valign="top" class="local-address">
+                                        <td>ADDRESS:</td>
+                                        <td itemprop="address">
+                                            Matēria&trade;<br/> Via Baldo degli Ubald<br/>  00167 - Roma<br/>
+                                        </td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td colspan="2"><a class="map" href="https://www.google.co.uk/maps/place/Epiphany+Search/@53.789448,-1.5365467,17z/data=!3m1!4b1!4m5!3m4!1s0x48795c19d3ac3851:0xb6f2c72892ee83f1!8m2!3d53.789448!4d-1.534358" target="_blank" class="map-trigger">OPEN MAP</a></td>
+                                    </tr>
+                                    <tr valign="top" class="tel-phone">
+                                        <td>TEL:</td>
+                                        <td itemprop="telephone">327.2518488</td>
+                                    </tr>
+                                    <tr valign="top" class="p-mail">
+                                        <td>EMAIL:</td>
+                                        <td><a href="#" itemprop="email">info@pec.materiacomunicazione.it</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTANT SECTION -->
+
+        <!-- SRART POPUP SECTION -->
+        <div id="popup_bg">
+            <div class="popup-main-body drag">
+               <div class="popup-icon" title="Full screen">
+                    <span><i class="fas fa-bolt bolt-popup-icon"></i></span>
+                </div>
+                <div class="full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="closePopupMenu()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="contant-scroll">
+                    <div class="popup-main-contant text-center">
+                       <img src="assets/images/popup-b-img.png" alt="images">
+                       <h3>Introducing Offfal™</h3>
+                       <p>Offfal™ is a bespoke in-house web operating system built by HeadOfffice™. 
+                        Designed to explore the interactions between humans and machines.</p>
+                        <p>It is a simple framework which we will be developing and updating regularly, adding new features and functionality. If you have any suggestions please <span><a class="email-us" href="mailto:reception@headofffice.com">email us</a></span></p>
+                    </div>
+                    <div class="popup-footer text-center">
+                        <p class="text-small">
+                            Company Reg Number : 9381899<br>
+                            VAT Reg Number : 228845381
+                        </p>
+                        <p class="text-small">
+                            HeadOfffice™ is the trading name of The Comms Department Ltd
+                            Old Linen Court, 83/85 Shambles Street, Barnsley, S70 2SB
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP SECTION -->
+
+        <!-- START COLOR PIKER SECTION -->
+        <div id="popup_color_perer">
+            <div class="popup-main-body-2 drag">
+                <div class="popup-icon" title="Full screen">
+                    <span><i class="fas fa-bolt bolt-popup-icon"></i></span>
+                </div>
+                <div class="full-popup-div-2" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="closeColorMenu()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                
+                <div class="contant-scroll">
+                    <div class="popup-main-contant d-flex flex-wrap justify-content-between">
+                        
+                        <div class="single-color color-name-1">
+                            <p>red</p>
+                        </div>
+                        <div class="single-color color-name-2">
+                            <p>green</p>
+                        </div>
+                        <div class="single-color color-name-3">
+                            <p>antiquewhite</p>
+                        </div>
+                        <div class="single-color color-name-4">
+                            <p>aqua</p>
+                        </div>
+                        <div class="single-color color-name-5">
+                            <p>crimson</p>
+                        </div>
+                        <div class="single-color color-name-6">
+                            <p>grey</p>
+                        </div>
+                        <div class="single-color color-name-7">
+                            <p>chartreuse</p>
+                        </div>
+                        <div class="single-color color-name-8">
+                            <p>chocolate</p>
+                        </div>
+                        <div class="single-color color-name-9">
+                            <p>silver</p>
+                        </div>
+                        <div class="single-color color-name-10">
+                            <p>violet</p>
+                        </div>
+                        <div class="single-color color-name-11">
+                            <p>lime</p>
+                        </div>
+                        <div class="single-color color-name-12">
+                            <p>mediumblue</p>
+                        </div>
+
+                        <div class="color-se d-flex flex-row justify-content-between">
+                            <div class="selected ml-5">Colour selected: <span>GRACE KELLY’S GOLDEN GLOBE</span></div>
+                            <div class="save-cancel d-flex mr-5">
+                                <div class="save-popup-div mr-3" title="Save" onclick="SaveColorMenu()">
+                                    <p>SAVE</p>
+                                </div>
+                                <div class="close-color-div ml-3" title="Cancel" onclick="closeColorMenu()">
+                                    <p>CANCEL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END COLOR PIKER SECTION -->
+        
+        <!-- SRART POPUP BODY READ ICON SECTION -->
+        <div id="popup_body">
+            <div class="popup-main-body-icon drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/red-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="closePopupMenuIcon()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h3>HEADOFRFICE™</h3>
+                       <h5>Be interesting on the internet</h5>
+                       <p>
+                            Being simply ‘good’ is no longer ‘good enough’ for today's audiences. Being a successful 
+                            digital brand takes much more. Your time-poor and emotionally distracted audience craves 
+                            a distinctiveness that a traditional agency can no longer provide.
+                        </p>
+
+                        <p>
+                            Stop producing digital content to satisfy algorithms, to win awards or to fill a slot in 
+                            a content plan, and start making content that makes your audience think and feel.
+                        </p>
+
+                        <p>
+                            We understand that your branded digital content needs to perform a variety of complex tasks, 
+                            but engaging an audience should be at the heart of everything. You need to partner with a 
+                            team that understands each element, and can pull it all together to create a cohesive, 
+                            immersive story. 
+                        </p>
+
+                        <h5>About Us</h5>
+
+                        <p>
+                            HeadOfffice™ is a small, multi-skilled team of designers, developers and writers, 
+                            working in partnership with brands, publishers and audiences. We focus on developing our 
+                            own <a class="email-us" href="#" onclick="SubOpenPopupBodyIcon()">inhouse digital publications</a> as well as selling our <a class="email-us" href="#" onclick="SubOpenPopupBodyIconTwo()">creative services</a> to a select 
+                            group of brand partners. 
+                        </p>
+
+                        <img src="assets/images/about-img.png" alt="images">
+
+                        <p>
+                            We believe that the traditional trappings of large creative agencies - the bureaucracy and 
+                            politics, the hierarchy and job titles - are detrimental to the creative process. An 
+                            organisation focused on justifying the existence of its own bloated structure is 
+                            fundamentally at odds with the production of interesting, creative and ground-breaking work.
+                        </p>
+
+                        <p>
+                            We have freed ourselves from this archaic way of working to create a modern, connected studio 
+                            that brings our varied skill sets to the fore, truly collaborating to create digital content 
+                            that is new and diffferent.
+                        </p>
+
+                        <p>
+                            We pride ourselves on delivering a more authentic and transparent way of working with our 
+                            clients. We promote a heuristic culture within the HeadOfffice™ studio. Where all team members 
+                            regardless of their specific role must present an aptitude for creativity, the use of technology 
+                            and marketing methods.  We aren’t siloed, separate or self interested, there’s no ‘us and them’; 
+                            we are one team, working together to produce creative, considered, audience-first content that 
+                            works for our partners.
+                        </p>
+
+                        <h5>Founded by Award-Winning Creative Director Gaz Battersby</h5>
+
+                        <img src="assets/images/about-img2.png" alt="images">
+
+                        <p>
+                            HeadOfffice™ was founded by Gaz Battersby in 2016. Over his 15-year career in the 
+                            creative and marketing sector, Gaz has delivered large-scale digital creative campaigns 
+                            at the highest level, while also building and managing large multi-skilled creative and 
+                            technical teams. Gaz has a reputation for generating great ideas and knowing how to make 
+                            them work, helping brands to grow.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP BODY READ ICON SECTION -->
+        
+        <!-- STRAT 1.SUB POPUP BODY READ ICON SECTION -->
+        <div id="sub-popup_body-1">
+            <div class="sub-popup-main-body-icon-1 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="sub-full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="SubClosePopupBodyIcon()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h3>HeadOfffice™ Publishing</h3>
+                       <h5>Digital publishing reimagined</h5>
+                       <p>
+                            HeadOfffice™ Publishing builds its own titles to reach and engage audiences 
+                            on their terms, creating environments for brands to interact with ready-made, 
+                            active communities.
+                        </p>
+
+                        <p>
+                            Every publication we devise is audience-first. This means that we build the 
+                            truly-engaged communities that brands want to talk to.
+                        </p>
+
+                        <p>
+                            Our own titles will give you both the reach you require to grow, and the 
+                            authenticity your audience seeks to build meaningful, lasting relationships.
+                        </p>
+
+                        <p>We’ll introduce you to our audiences, and work together to share your story.</p>
+
+                        <p>
+                            With a roadmap of title development stretching into 2018, we will launch a number 
+                            of titles across a variety of verticals, appealing to audiences and brand partners 
+                            alike. Our first title is due for launch early 2017. 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 1.SUB POPUP BODY READ ICON SECTION -->
+        
+        <!-- STRAT 2.SUB POPUP BODY READ ICON SECTION -->
+        <div id="sub-popup_body-2">
+            <div class="sub-popup-main-body-icon-2 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="sub-full-popup-div-2" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="SubClosePopupBodyIconTwo()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h3>HeadOfffice™ Publishing</h3>
+                       <h5>Digital publishing reimagined</h5>
+                       <p>
+                            HeadOfffice™ Publishing builds its own titles to reach and engage audiences 
+                            on their terms, creating environments for brands to interact with ready-made, 
+                            active communities.
+                        </p>
+
+                        <p>
+                            Every publication we devise is audience-first. This means that we build the 
+                            truly-engaged communities that brands want to talk to.
+                        </p>
+
+                        <p>
+                            Our own titles will give you both the reach you require to grow, and the 
+                            authenticity your audience seeks to build meaningful, lasting relationships.
+                        </p>
+
+                        <p>We’ll introduce you to our audiences, and work together to share your story.</p>
+
+                        <p>
+                            With a roadmap of title development stretching into 2018, we will launch a number 
+                            of titles across a variety of verticals, appealing to audiences and brand partners 
+                            alike. Our first title is due for launch early 2017. 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 2.SUB POPUP BODY READ ICON SECTION -->
+        
+        <!-- STRAT POPUP BODY SERVICES ICON SECTION -->
+        <div id="popup_body-service">
+            <div class="service-popup drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="service-full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseServicePopupDiv()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-center d-flex">
+                        <div class="services-img" onclick="OpenServicePopupSub()">
+                            <img src="assets/images/services-1.png" alt="icon">
+                            <span>HeadOfffice™ Creative</span>
+                        </div>
+                        <div class="services-img ml-4" onclick="OpenServicePopupSubTwo()">
+                            <img src="assets/images/services-2.png" alt="icon">
+                            <span>HeadOfffice™ Publishing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP BODY SERVICES ICON SECTION -->
+        
+        
+        <!-- STRAT 1.SUB POPUP BODY SERVICES ICON SECTION -->
+        <div id="popup_body-service-sub-1">
+            <div class="service-popup-sub-1 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="service-full-popup-div-sub-1" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseServicePopupSub()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>HeadOfffice Creative.TXT</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h3>HeadOfffice™ Creative Services</h3>
+                       <h5>We produce a different kind of branded digital content.</h5>
+                       <p>
+								Our experienced design, creative and technical teams produce cutting-edge, 
+								integrated digital campaigns that fit into our client’s digital world, as 
+								well as in their audience’s social universe.
+							</p>
+
+							<p>
+								Good digital content that truly connects with people doesn’t just happen.
+								From seemingly-simple headlines to sprawling interactives, every individual 
+								element is a new opportunity to communicate with your audience and tell 
+								them your story.
+							</p>
+
+							<!-- << Other office photos >> -->
+
+							<p>
+								HeadOfffice™ can work with you to make the most of this opportunity, 
+								helping you define who your audience is, and when, where and how you should 
+								communicate with them.
+							</p>
+
+							<p>Our services include:</p>
+
+							<ul class="plain">
+								<li>— Digital brand consultancy</li>
+								<li>— Web and interaction design and development</li>
+								<li>— Content strategy and development</li>
+								<li>— Content and editorial support</li>
+								<li>— Content production and optimization</li>
+								<li>— Micro content</li>
+								<li>— Branded partnerships</li>
+								<li>— Video and podcast production</li>
+								<li>— In-house training and development</li>
+							</ul>
+
+
+							<p>
+								We don’t underestimate how diffficult this is to get right. Contact 
+								<a href="mailto:reception@headofffice.com">reception@headofffice.com</a> to discuss 
+								your current content output and how we can work together to make it work for you.
+							</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 1.SUB POPUP BODY SERVICES ICON SECTION -->
+        
+        
+        <!-- STRAT 1.SUB POPUP BODY SERVICES ICON SECTION -->
+        <div id="popup_body-service-sub-2">
+            <div class="service-popup-sub-2 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="service-full-popup-div-sub-2" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseServicePopupSubTwo()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>HeadOffficePublishing.TXT</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h3>HeadOfffice™ Publishing</h3>
+                       <h5>Digital publishing reimagined</h5>
+                        <p>
+                            HeadOfffice™ Publishing builds its own titles to reach and engage audiences 
+                            on their terms, creating environments for brands to interact with ready-made, 
+                            active communities.
+                        </p>
+
+                        <p>
+                            Every publication we devise is audience-first. This means that we build the 
+                            truly-engaged communities that brands want to talk to.
+                        </p>
+
+                        <p>
+                            Our own titles will give you both the reach you require to grow, and the 
+                            authenticity your audience seeks to build meaningful, lasting relationships.
+                        </p>
+
+                        <p>We’ll introduce you to our audiences, and work together to share your story.</p>
+
+                        <p>
+                            With a roadmap of title development stretching into 2018, we will launch a number 
+                            of titles across a variety of verticals, appealing to audiences and brand partners 
+                            alike. Our first title is due for launch early 2017. 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 1.SUB POPUP BODY SERVICES ICON SECTION -->
+        
+        
+        
+        <!-- STRAT POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client">
+            <div class="client-popup drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="client-full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopup()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>Matēria</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-center d-flex flex-wrap justify-content-center">
+                        <div class="services-img" onclick="OpenClientPopupOne()">
+                            <img src="assets/images/clients.png" alt="icon">
+                            <span>hgf.png</span>
+                        </div>
+                        <div class="services-img" onclick="OpenClientPopupTwo()">
+                            <img src="assets/images/clients.png" alt="icon">
+                            <span>matalan.png</span>
+                        </div>
+                        <div class="services-img" onclick="OpenClientPopupThree()">
+                            <img src="assets/images/clients.png" alt="icon">
+                            <span>post.png</span>
+                        </div>
+                        <div class="services-img" onclick="OpenClientPopupFour()">
+                            <img src="assets/images/clients.png" alt="icon">
+                            <span>verticly.png</span>
+                        </div>
+                        <div class="services-img" onclick="OpenClientPopupFive()">
+                            <img src="assets/images/clients.png" alt="icon">
+                            <span>nicole_farhi.png</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT 1. SUB POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client-sub-1">
+            <div class="client-popup-sub-1 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-client-sub-1" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopupOne()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>hgf.png</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h5>Hgf</h5>
+                       <a class="hgf clearfix" href="http://www.hgf.com/" target="_blank">Visit website</a>
+                        <img class="hgf-img" src="assets/images/c-sub-img-1.png" alt="HGF">
+                        <p>
+                            HGF needed a business-changing digital solution to match its ambitions 
+                            for global growth as a leading IP expert. It sought out a visually-striking 
+                            website that would stand out from the rest of the market, presenting the 
+                            brand in an innovative and challenging way. 
+                        </p>
+
+                        <p>
+                            Working with HGF's brand partner Lee Goater, we developed and delivered a sustainable, expandable digital strategy over the past three years. Built on a solid technical platform, we have supported HGF across a number of campaigns and long-term strategies.
+                        </p>
+
+                        <img class="hgf-img" src="assets/images/c-sub-img-2.png" alt="HGF">
+
+                        <p>We provided:</p>
+
+                        <ul class="plain">
+                            <li>Web design and development</li>
+                            <li>Digital campaigns</li>
+                            <li>UX and web design</li>
+                            <li>Digital brand consultancy</li>
+                            <li>Content development and delivery</li>
+                        </ul>
+
+                        <p>If you would like us to do the same for your brand please <a class="email-us" href="mailto:reception@headofffice.com">contact us</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 1. SUB POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT 2. SUB POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client-sub-2">
+            <div class="client-popup-sub-2 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-client-sub-2" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopupTwo()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>/matalan.png</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                       <h5>Matalan</h5>
+                       <a class="hgf clearfix" href="http://www.matalan.co.uk/" target="_blank">Visit website</a>
+                        <img class="hgf-img" src="assets/images/c-sub-img-4.png" alt="HGF">
+                        <p>
+                            As one of the smallest studios in the UK, it’s testament to our approach and culture that we have been able to form such a positive, collaborative working relationship with one of the most popular brands in the UK.
+                        </p>
+                        
+                        <p>We provided:</p>
+
+                        <ul class="plain">
+                            <li>Content design and development</li>
+                            <li>UX and web design</li>
+                            <li>Digital brand consultancy</li>
+                            <li>Written content</li>
+                        </ul>
+
+                        <img class="hgf-img" src="assets/images/c-sub-img-5.png" alt="HGF">
+                        <p>
+                            "Working with Gaz and the team has been really beneficial. The breadth of 
+                            experience they bring to the table really helps to accelerate a project and 
+                            provide exciting and innovative new ways to approach design challenges. 
+                            HeadOfffice™ maintain that rare ability to explain complex subjects in easy 
+                            to understand formats, with end results that speak for themselves. I look 
+                            forward to working with the guys again on future projects. Highly recommended.”
+                        </p>
+
+                        <p>
+                            <u>Marcus Fairbrother</u><br>
+                            Senior Omni Channel Strategy &amp; Digital Development Manager
+                        </p>
+
+                        <p>
+                            We have partnered with the Matalan Digital team across a number of 
+                            key areas relating to its digital strategy, including page design and optimisation, 
+                            content development and creation, and supporting key product sections. Assisting with 
+                            the conception and realisation of how modern digital brands should be operating, we 
+                            took time to understand Matalan’s diverse and loyal customer base, aiding the brand 
+                            in the creation of a contemporary digital strategy that puts the needs of its audience 
+                            front and centre.
+                        </p>
+
+                        <p>If you would like us to do the same for your brand please <a href="mailto:reception@headofffice.com">contact us</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 2. SUB POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT 3. SUB POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client-sub-3">
+            <div class="client-popup-sub-3 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-client-sub-3" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopupThree()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>/matalan.png</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                        <h5>POST Recruitment</h5>
+				        <a class="hgf clearfix" href="http://postrecruitment.com/" target="_blank">Visit website</a>.
+                        <img class="hgf-img" src="assets/images/c-sub-img-6.png" alt="POST Recruitment">
+
+                        <p>
+                            With a plan to change the world of recruitment for the better, we were keen to make POST feel as different from other recruiters as possible. With a set of strong values key to its service proposition, the business needed a new brand which fulfilled its promise of simple and clear working practices, while also being mindful of the fast-moving world of its mobile-first audience.
+                        </p>
+
+                        <p>
+                            We built a new brand from scratch, including a new name, brand identity, print collateral and a responsive website. We work closely with the POST team to ensure they are able to grow as a business and a brand, producing and consulting on the execution of the brand both online and offline.
+                        </p>
+
+                        <p>We provide:</p>
+
+                        <ul class="plain">
+                            <li>Responsive web design and development</li>
+                            <li>CMS development</li>
+                            <li>Brand development and origination </li>
+                            <li>UX and web design</li>
+                            <li>Content development and delivery</li>
+                            <li>Print assets</li>
+                        </ul>
+
+                        <img class="hgf-img" src="assets/images/c-sub-img-7.png" alt="POST Recruitment">
+
+                        <p>
+                            “Gaz and the team’s end-to-end approach had a profound effect on the way we do business. They took the time to really understand how a recruitment business operates, and we now have a clean, contemporary brand proposition that we can be proud of that stands out in the marketplace. They always have time for us, are never too busy to discuss our ideas, and their ability to explain technical subjects in a clear fashion adds value to our business everyday. Our ongoing working relationship will be key to POST’s success.”
+                        </p>
+
+                        <p>
+                            <u>Alex Bradley</u><br>
+                            Director at POST
+                        </p>
+
+                        <p>If you would like us to do the same for your brand please <a class="email-us" href="mailto:reception@headofffice.com">contact us</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 3. SUB POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT 4. SUB POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client-sub-4">
+            <div class="client-popup-sub-4 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-client-sub-4" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopupFour()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>/verticly.png</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                        <h1>Verticly</h1>
+				        <a class="hgf clearfix" href="http://www.verticly.com/" target="_blank">Visit website</a>
+
+                        <img class="hgf-img" src="assets/images/c-sub-img-8.png" alt="Verticly">
+
+                        <p>
+                            As an award-winning technology disruptor in the programmatic sector, Verticly required a distinctive digital brand to distinguish itself in this growing market space. Working with Lee Goater, we produced a unique brand which worked both on and offline, scaling from a responsive website to Powerpoint presentations with a consistent execution and tone to build a strong business proposition. 
+                        </p>
+
+                        <p>We provided:</p>
+
+                        <ul class="plain">
+                            <li>Responsive web design and development</li>
+                            <li>Brand development and origination</li>
+                            <li>UX and web design</li>
+                            <li>Print assets</li>
+                            <li>Illustrations</li>
+                            <li>Interface Design</li>
+                        </ul>
+
+<!--                        <img class="hgf-img" src="/assets/img/Verticly_2.gif" alt="Verticly">-->
+
+                        <!--<p>
+                            “The input that Gaz and the HeadOfffice&trade; team have provided to our early stage of development has been so significant it goes beyond the standard client / agency relationship. They have helped shape and focus our proposition into a creative, stand-out brand. We can’t recommend them enough.”
+                        </p>
+
+                        <p>
+                            <u>Ryan Kliszat</u><br />
+                            Co-Founder of Verticly
+                        </p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 4. SUB POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT 5. SUB POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-client-sub-5">
+            <div class="client-popup-sub-5 drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="full-popup-client-sub-5" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="CloseClientPopupFive()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>/Nicole Farhi.png</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                        <h1>Nicole Farhi</h1>
+                        <a class="hgf clearfix" href="https://www.nicolefarhi.com/" target="_blank">Visit website</a>.
+                        <img class="hgf-img" src="assets/images/c-sub-img-9.png" alt="Nicole Farhi">
+
+                        <p>
+                            We have had the pleasure of working with this heritage fashion brand in developing its digital proposition and brand experience. We’ve helped the business bring its unique take on culture and lifestyle to a whole new audience, while still appealing to its long standing and loyal customer base.
+                        </p>
+
+                        <p>We provided:</p>
+
+                        <ul class="plain">
+                            <li>Responsive web design and development</li>
+                            <li>Digital brand consultancy </li>
+                            <li>UX design</li>
+                            <li>Content strategy</li>
+                        </ul>
+
+                        <p>If you would like us to do the same for your brand please <a class="email-us"  href="mailto:reception@headofffice.com">contact us</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END 5. SUB POPUP BODY CLIENTS ICON SECTION -->
+        
+        <!-- STRAT POPUP BODY CLIENTS ICON SECTION -->
+        <div id="popup_body-shouts">
+            <div class="shouts-popup drag">
+               <div class="popup-icon">
+                    <span class="bg-transparent"><img src="assets/images/sub-2-icon.png" alt="icon"></span>
+                </div>
+                <div class="shouts-full-popup-div" title="Full screen">
+                    <p><i class="fas fa-compress compress-icon"></i></p>
+                </div>
+                <div class="close-popup-div" title="close" onclick="closePopupShouts()">
+                    <p>X</p>
+                </div>
+                <div class="section-top">
+                   <h6>ANNOUNCEMENT.TXT</h6>
+                </div>
+                <div class="body-contant-scroll">
+                    <div class="popup-icon-contant text-left">
+                        <h5>Jaywing plc adds Social Audiences platform with acquisition of HeadOfffice</h5>
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <img src="assets/images/logo-1.png" alt="">
+                            <img src="assets/images/logo-2.png" alt="">
+                        </div>
+
+                        <p>
+                            <a class="email-us"  href="https://jaywing.com/" target="_blank">Jaywing</a> has announced today the acquisition of social publishing, native marketing and audience first 
+                            creative agency HeadOfffice. The agency will become part of its Leeds based digital marketing 
+                            business <a class="email-us"  href="https://www.epiphanysearch.co.uk/" target="_blank">Epiphany</a>. 
+                        </p>
+
+                        <img class="mt-3 mb-3" src="assets/images/shouts-1.png" alt="">			
+
+                        <p>
+                            HeadOfffice was founded in 2016 by former Epiphany Creative Director, Gaz Battersby and has grown 
+                            quickly since.
+                        </p>
+
+                        <p>
+                            Tom Salmon, MD of Epiphany, commented: "It’s really great to have Gaz back in the fold, both in terms 
+                            of the top drawer creative skills he and his team will bring to Epiphany and the emerging opportunities 
+                            in social audience creation and engagement. As Creative Partner, Gaz will oversee all of Epiphany’s 
+                            creative output and the development of new creative propositions, as well as the further development of 
+                            HeadOfffice. The addition of the HeadOfffice team to our studio means we have bolstered our creative 
+                            strength to meet growing demand from a broad range of clients, as well as adding valuable and unique 
+                            social publishing and amplification experience. All of this makes HeadOfffice a great fit with 
+                            Epiphany."
+                        </p>
+
+                        <p>
+                            Commenting on the deal, Rob Shaw CEO of Jaywing said: "I’ve known Gaz for many years and I’m really 
+                            impressed with what he has created in HeadOfffice. We know that the worlds of brand and performance 
+                            marketing are coming together, with Google and Facebook leading many of those changes that favour 
+                            brands that connect with their customers. Putting HeadOfffice’s creative excellence and social content 
+                            alongside what we already excel in across Epiphany means that we’re perfectly positioned to let our 
+                            clients take advantage of this change."
+                        </p>
+
+                        <p>
+                            "I’m absolutely thrilled to be back working with Rob and Tom", said Battersby. "Having taken the 
+                            HeadOfffice proposition from a one man start-up to an established team with retained clients and a 
+                            growing social audience platform, the time felt right to take it to the next level with the 
+                            opportunities being part of a bigger business brings. My time at Epiphany was one of the most rewarding 
+                            periods of my career and I’m quite sure it will be again now, with its renewed vigour and focus on its 
+                            creative direction. The fact that we’ve all worked together and know each other well means that we’re 
+                            going to be able to deliver great work for clients from day one."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP BODY CLIENTS ICON SECTION -->
+        
+        
+        <!--main js v-3.2.1-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--bootstrap.min.js v-3.3.7-->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <!--For time -->
+        <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+        
+        <!--For mouse drag-->
+        <script src="assets/js/draganddrop.js"></script>
+
+        <!--fontawesome-all.min.js v-5.0.9-->
+        <script src="assets/js/fontawesome-all.min.js"></script>
+
+        <!--news-ticker-->
+        <script src="assets/js/jquery.jticker.min.js"></script>
+
+        <!--from-active.js-->
+        <script src="assets/js/from-active.js"></script>
+
+        <!--custom js-->
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+
+</html>
